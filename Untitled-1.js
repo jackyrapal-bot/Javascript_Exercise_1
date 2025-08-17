@@ -1,0 +1,46 @@
+var myName = "Jacky Rapal";
+let myAge = "19";
+const PI = 3.1416;
+let isStudent = Number(myAge) < 25;
+
+let person = {
+    firstName: "Jacky",
+    lastName: "Rapal",
+    contact: {
+        email: "jacky@example.com",
+        phone: "09123456789"
+    },
+    address: {
+        city: "Davao City",
+        country: "Philippines"
+    }
+};
+
+let colors = ["red", "blue", "green", "yellow", "red"];
+
+let words = ["apple", "banana", "grape", "mango"];
+let transformedWords = [];
+
+for (let word of words) {
+    let reversed = "";
+    // Reverse manually without .reverse()
+    for (let i = word.length - 1; i >= 0; i--) {
+        reversed += word[i];
+    }
+    transformedWords.push(reversed.toUpperCase());
+}
+
+console.log("Transformed Words:", transformedWords);
+
+let numbers = [12, 45, 67, 23, 90, 32, 11, 9, 28];
+let evenAndGreater20 = [];
+let count = 0;
+
+for (let num of numbers) {
+    if (num % 2 === 0 && num > 20) {
+        evenAndGreater20.push(num);
+        count++;
+    }
+}
+
+console.log(`Found ${count} numbers: [${evenAndGreater20.join(", ")}]`);
